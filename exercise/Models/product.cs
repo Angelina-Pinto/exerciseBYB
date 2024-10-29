@@ -6,16 +6,18 @@ using System.Threading.Tasks;
 
 namespace exercise.Models
 {
-    internal class product
+
+    class product
     {
-        public int Id { get; set; }
+        public static List<product> ProductList = new List<product>();
+       
         public string Nombre { get; set; }
         public decimal Precio { get; set; }
         public DateTime FechaCreacion { get; set; }
 
-        public product(int id, string nombre, decimal precio, DateTime fechaCreacion)
+        public product(string nombre, decimal precio, DateTime fechaCreacion)
         {
-            Id = id;
+         
             Nombre = nombre;
             Precio = precio;
             FechaCreacion = fechaCreacion;
