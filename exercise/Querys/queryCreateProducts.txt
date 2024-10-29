@@ -1,0 +1,6 @@
+CREATE TABLE Producto (
+    ID INT PRIMARY KEY IDENTITY(1,1),       -- Identificador único, auto-incremental
+    Nombre VARCHAR(100) NOT NULL,           -- Nombre del producto
+    Precio DECIMAL(10, 2) NOT NULL,         -- Precio del producto con dos decimales
+    Fecha_Creacion DATE DEFAULT GETDATE()   -- Fecha de creación con valor predeterminado de la fecha actual
+);

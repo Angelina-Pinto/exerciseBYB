@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\FormProductsGrud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormProductsGrud.Designer.cs">
+      <DependentUpon>FormProductsGrud.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,8 +64,12 @@
     <Compile Include="Forms\FormAreaCalculation.Designer.cs">
       <DependentUpon>FormAreaCalculation.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\product.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\FormProductsGrud.resx">
+      <DependentUpon>FormProductsGrud.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -90,6 +100,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Diagrams\" />
+    <Folder Include="Querys\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

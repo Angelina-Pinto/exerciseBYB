@@ -10,28 +10,21 @@ using System.Windows.Forms;
 
 namespace exercise
 {
-    public partial class Form1 : Form
+    public partial class FormProductsGrud : Form
     {
-        public Form1()
+        public FormProductsGrud()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FormAreaCalculation newForm = new FormAreaCalculation();
-            this.Hide();
-            newForm.Show();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
-            FormProductsGrud newForm = new FormProductsGrud();
+            Form1 newForm = new Form1();
             this.Hide();
             newForm.Show();
         }
