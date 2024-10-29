@@ -1,0 +1,37 @@
+- Pregunta no.1
+Una clase es una plantilla donde colocamos las propiedades y atributos de un objeto, un objeto es una instancia de la clase creada.
+
+- Pregunta No. 2 
+Un método constructor lleva el nombre de la misma clase y en el se definen los atributos de entrada de un objeto 
+Ejemplo : 
+
+nombre de clase ()
+atributo 1 
+atributo2 
+atributo 3 
+
+
+- Pregunta No.3
+La herencia hace referencia compartir métodos y atributos a una clase padre un ejemplo de esto seria como clase padre la clase profesor la cual hereda atributos de la clase persona 
+
+- Pregunta No.4
+ los modificadores de acceso permiten establecer el nivel de alcance de una variable método o clase  entre ellos destaca
+ 
+public : se puede acceder desde su clase y otra clases 
+private : se puede acceder a su mis ma clase mas no a una 
+
+- Pregunta No.5
+El encapsulamiento permite 
+
+- Pregunta No.7
+El polimorfismo permite crear un método con un nombre pero que sea usado para diferentes opciones dependiendo de sus parámetros de entrada  
+
+- Pregunta No.8
+Un inner join permite obtener los elementos en común de dos tablase que comparte un llave foránea 
+
+- Pregunta No.9
+El DDL se utiliza para la creación de datos a  diferencia de un DDL el DML se utiliza para la modificación y manipulación  de datos 
+
+- Pregunta No.10
+Entre ellos se destaca int,long,shortk, byte 
+

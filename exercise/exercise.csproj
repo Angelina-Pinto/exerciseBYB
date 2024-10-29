@@ -101,6 +101,7 @@
   <ItemGroup>
     <Folder Include="Diagrams\" />
     <Folder Include="Querys\" />
+    <Folder Include="Questions\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
