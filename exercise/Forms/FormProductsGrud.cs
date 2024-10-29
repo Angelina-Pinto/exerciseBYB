@@ -17,6 +17,44 @@ namespace exercise
         {
             InitializeComponent();
         }
+        private void btnEliminarProducto_Click(object sender, EventArgs e)
+        {
+            // Verifica si hay un elemento seleccionado en el ListView
+            if (listView1.SelectedItems.Count > 0)
+            {
+                // Obtiene el primer item seleccionado
+                ListViewItem itemSeleccionado = listView1.SelectedItems[0];
+
+                // Obtiene el nombre del producto seleccionado
+                string nombreProducto = itemSeleccionado.SubItems[0].Text; // Suponiendo que el nombre está en la primera columna
+
+                // Elimina el producto de la lista
+                EliminarProducto(nombreProducto);
+
+                // Elimina el item del ListView
+                listView1.Items.Remove(itemSeleccionado);
+            }
+            else
+            {
+                MessageBox.Show("No se ha seleccionado ningún producto.");
+            }
+        }
+
+        private void EliminarProducto(string nombre)
+        {
+            // Busca el producto en la lista y lo elimina
+            product productoAEliminar = product.ProductList.FirstOrDefault(p => p.Nombre.Equals(nombre, StringComparison.OrdinalIgnoreCase));
+
+            if (productoAEliminar != null)
+            {
+                product.ProductList.Remove(productoAEliminar);
+            }
+            else
+            {
+                MessageBox.Show("El producto no se encontró en la lista.");
+            }
+        }
+
         private void AddProductToListView(product product)
         {
             // Crear un ListViewItem con el nombre del producto
@@ -64,6 +102,28 @@ namespace exercise
             Form1 newForm = new Form1();
             this.Hide();
             newForm.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (listView1.SelectedItems.Count > 0)
+            {
+                // Obtiene el primer item seleccionado
+                ListViewItem itemSeleccionado = listView1.SelectedItems[0];
+
+                // Obtiene el nombre del producto seleccionado
+                string nombreProducto = itemSeleccionado.SubItems[0].Text; // Suponiendo que el nombre está en la primera columna
+
+                // Elimina el producto de la lista
+                EliminarProducto(nombreProducto);
+
+                // Elimina el item del ListView
+                listView1.Items.Remove(itemSeleccionado);
+            }
+            else
+            {
+                MessageBox.Show("No se ha seleccionado ningún producto.");
+            }
         }
     }
 }
